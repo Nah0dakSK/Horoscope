@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Horoskop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="center-screen">
+    <div class="d d-flex">
+
+        <h1>HOROSKOP</h1>
+
+        <div class="horoskop-image-container">
+            <div class="horoskop-image">
+                <img src="images/vodnar.png" alt="znamenie-zverokruhu">
+            </div>
+        </div>
+        <h1 class="horoskop-name"></h1>
+        <p class="custom-text">
+            V osobnom živote je toto obdobie prevratov, ak by ste bojovali s nedostatkom času, stačí si len lepšie
+            premyslieť jednotlivé kroky. V láske neváhajte byť veľkorysí, nielenže si to vaša polovička zaslúži, ale je
+            to niečo, čo váš vzťah posunie zas ďalej.
+        </p>
+        <form class="custom-form">
+            <label for="birthday">Dátum narodenia</label>
+            <input type="date" id="birthday" name="birthday">
+            <button class="btn" onclick="changeDateTime(event)"> Potvrď dátum</button>
+        </form>
+    </div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
